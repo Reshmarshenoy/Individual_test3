@@ -1,0 +1,71 @@
+<section id="title" class="container clearfix">
+	
+	
+		<!-- Title -->
+		<div class="ten columns">
+		
+			<h1>Contact.</h1>
+			<h3>So, you've arrived at the contact page... Which hopefully means that you'd like to talk to us. No problem just fill up the form below.</h3>
+            </div>
+		<!-- End Title -->
+		
+		 
+	</section><!-- END CONTAINER -->
+	
+	<section id="contact" class="container">
+	<div class="row">
+		
+		        <div class="col-sm-8">
+			<!-- Form -->
+			<form method="post" action="post.php" name="contactform" id="contactform">
+				<fieldset>
+					<div class="form-field">
+						<label for="name"><h5>Name</h5></label>
+						<span><input type="text" name="name" id="name" /></span>
+					</div>
+					<div class="form-field">
+						<label for="email"><h5>Email</h5></label>
+						<span><input type="email" name="email" id="email" /></span>
+					</div>
+					<div class="form-field">
+						<label for="message"><h5>Message</h5></label>
+						<span><textarea name="message" id="message"></textarea></span>
+					</div>
+				</fieldset>
+				<div class="form-click">
+					<span><input type="submit" name="submit" value="Send" id="submit" /></span>
+				</div>
+			</form>	
+			<!-- End Form -->
+			<div id="alert"></div>
+		</div>
+		
+		<aside div class="col-sm-4">
+			<h3 class="first">Email</h3>
+		
+			                <a  class="btn  butt"  href="mailto:contact@crisp.com">contact@crisp.com</button></a>
+			<h3>Telephone</h3>
+			<p><span class="telephone"><h4><b>+123 88 555 889</b></h4></span></p>
+			
+			<h3>Address</h3>
+			<div class="address">
+				Westbridge House<br>
+				West Street<br>
+				Lancaster<br>
+				Essex, CX1 2TO<br>
+				United Kingdom
+			</div>
+			
+			<h3>Social</h3>
+			<div class="social">
+				<a href="#"><img src="<%= image_path 'dribbble.png'%>" alt="icon" width="32" height="32" /></a>
+				<a href="#"><img src="<%= image_path 'twitter.png'%>" alt="icon" width="32" height="32" /></a>
+				<a href="#"><img src="<%= image_path 'facebook.png'%>" alt="icon" width="32" height="32" /></a>
+				<a href="#"><img src="<%= image_path 'github.png'%>" alt="icon" width="32" height="32" /></a>
+				<a href="#"><img src="<%= image_path 'google.png'%>" alt="icon" width="32" height="32" /></a>
+				<a href="#"><img src="<%= image_path 'skype.png'%>" alt="icon" width="32" height="32" /></a>
+			</div>
+		</aside>	
+	</div>
+		
+	</section>

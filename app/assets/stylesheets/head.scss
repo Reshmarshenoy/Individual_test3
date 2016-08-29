@@ -1,0 +1,150 @@
+/*  2. Header CSS
+/*----------------------------------------*/
+
+.header-area {
+    padding: 30px 0;
+}
+
+.header-area .header-right .info-icon {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #777;
+    border-radius: 4px;
+    color: #777;
+    display: block;
+    float: left;
+    font-size: 22px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+}
+
+.info-box:hover .info-icon {
+    background: #f96d55 none repeat scroll 0 0;
+    border: 1px solid #f96d55;
+    color: #ffffff;
+}
+
+.header-area .header-right .info-content {
+    float: left;
+    margin-left: 10px;
+}
+
+.header-area .header-right .info-content h3 {
+    color: #777;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 2px;
+}
+
+.header-right,
+ul.footer-menu {
+    float: right;
+}
+
+.header-area .header-right .info-box {
+    float: left;
+    margin-top: 10px;
+}
+
+.header-area .header-right .info-box.left {
+    margin-right: 20px;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  3. MainMenu CSS
+/*----------------------------------------*/
+
+.mainmanu-area {
+    border-bottom: 2px solid #f96d55;
+}
+
+.mainmenu {
+    background: #343434;
+}
+
+.mainmenu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.mainmenu ul li a {
+    color: #bdbbbb;
+    display: block;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 20px 15px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.mainmenu ul li ul.sub-menu {
+    background: #222222 none repeat scroll 0 0;
+    text-align: left;
+    top: 104%;
+    width: 250px;
+    z-index: 999;
+}
+
+.restrain {
+    opacity: 0;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    transition: all 0.5s ease 0s;
+    z-index: -99;
+}
+
+.mainmenu ul li ul.sub-menu li {
+    border-bottom: 1px solid #616369;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.mainmenu ul li ul.sub-menu li:hover {
+    border-bottom: 1px solid #F96D55;
+}
+
+.mainmenu ul li ul.sub-menu li:hover:last-child,
+.mainmenu ul li ul.sub-menu li:last-child {
+    border-bottom: none;
+}
+
+.mainmenu ul li ul li a::after,
+.mainmenu ul li span a::after,
+.portfolio-list .mix {
+    display: none;
+}
+
+body {
+    font: 14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+    color: #333;
+    background: white;
+}
+
+.mainmenu ul li ul.sub-menu li a {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px 20px;
+    text-transform: none;
+}
+
+.expand:hover .restrain {
+    opacity: 1;
+    transform: scaleY(1);
+    z-index: 9999;
+}
+
+.mainmenu ul li a:hover,
+.restrain a:hover {
+    color: #ffffff !important;
+    background: #444444;
+}
